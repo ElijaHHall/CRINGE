@@ -4,13 +4,30 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+
 {% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  Wow, your phone number is {{ user.phone }}
-  <p><a href="{% url 'logout' %}">logout</a></p>
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="#" class="brand-logo center">CRNG</a>
+	  <ul id="nav-mobile" class="left">
+		<li><a href="info"><i class="fas fa-pen-square"></i></a></li>
+	  </ul>
+	  <ul id="nav-mobile" class="right">
+		<li><a href="contacts"><i class="fas fa-users"></i></a></li>
+	  </ul>
+	</div>
+</nav>
+	<h1>Hi {{ user.username }}!</h1>
+	<h3>Wow, your phone number is {{ user.phone }}! Great job!</h3>
+	<a href="{% url 'logout' %}">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Log dafuq out
+    		<i class="fas fa-sign-in-alt"></i>
+  		</button>
+  	</a>
+	  
 {% else %}
-  <p>You are not logged in</p>
-  <a href="{% url 'login' %}">login</a> |
-  <a href="{% url 'signup' %}">signup</a>
+	<p>You are not logged in</p>
+	<a href="{% url 'login' %}">login</a> |
+	<a href="{% url 'signup' %}">signup</a>
 {% endif %}
 {% endblock %}

@@ -15,3 +15,11 @@ class Contact(models.Model):
 
 	def __str__(self):
 		return self.name
+
+messages = [
+    Message('frig off, Rick', 'big_poops'),
+    Message('frig off, Mom', 'big_poops'),
+    Message('frig off, Janice', 'big_poops'),
+    Message('i hate horses', 'big_poops'),
+    Message('but also polar horses', 'big_poops'),
+]
