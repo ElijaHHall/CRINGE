@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "11ffee951010a5416cebabc65d8ff4922d7a0930f55bf35290d075f4d3cb4136"
+            "sha256": "9c17b671d4e29c858ae21e366dbcfa218937e7ca003bdc43b92b0a0a5f74fa13"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -49,6 +49,13 @@
                 "sha256:6af4bc3ae4a9b55eaad6dbe5164918982d2762661aebc9f83d9fa49f6009514e"
             ],
             "version": "==0.3.1"
+        },
+        "django-phone-field": {
+            "hashes": [
+                "sha256:6d8ab8bd8d822c95b7870f4becbbbb81d9cdf52fbe15b7def640759268b60007",
+                "sha256:dce16909079b386bb9ee1d3a2c5af26f836bd969244ad99dce8d5ecea180d95b"
+            ],
+            "version": "==1.5.4"
         },
         "gunicorn": {
             "hashes": [
