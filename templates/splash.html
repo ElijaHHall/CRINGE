@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Welcome?{% endblock %}
+
+{% block content %}
+
+<h1>Welcome Cringers!</h1>
+
+<a class="btn waves-effect waves-light" href="{% url 'signup' %}">Sign-up</a>
+
+<a class="btn waves-effect waves-light" href="{% url 'login' %}">login</a>
+
+
+
+{% endblock %}
