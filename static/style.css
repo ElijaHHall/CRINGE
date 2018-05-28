@@ -1,10 +1,21 @@
 body {
-    background-color: #FFD521
+    background:  linear-gradient(yellow, #FFD521);
+}
+
+main .drunk {
+    width: 20%;
+    margin-left: 40%;
 }
 
 h2 {
     color: black;
     text-align: center;
+    font-family: 'Plaster', cursive;
+}
+
+.brand-logo {
+    font-family: 'Shadows Into Light', cursive;
+
 }
 
 .signUpForm {
@@ -14,11 +25,17 @@ h2 {
 }
 
 input {
-    background-color: #E5C01E !important;
+    background-color: rgba(229,207,30,.75) !important;
     border-radius: 5px !important;
     margin-top: 5px !important;
     border-bottom: none !important;
     font-size: 25px !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    text-align: center;
 }
 
 body label {
@@ -26,10 +43,35 @@ body label {
     background-color: rgba(0,0,0,.75);
     display: inline-block;
     color: white;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
 }
-
- span .helptext {
+.helptext {
     display: none;
+}
+
+#id_phone_1 {
+    display: none;
+}
+
+#submitFormBtn {
+    margin-bottom: 20px;
+}
+
+#id_birth_date_0 {
+    display: inline;
+    width: 16%;
+    margin: 1%;
+}
+
+#id_birth_date_1 {
+    display: inline;
+    width: 16%;
+    margin: 1%;
+}
+
+#id_birth_date_2 {
+    display: inline;
+    width: 16%;
+    margin: 1%;
 }
