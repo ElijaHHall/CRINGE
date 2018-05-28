@@ -25,7 +25,7 @@ SECRET_KEY = 'ym6=j^3qt9%+z9sl^&2m9h*fsgdk#077-(6nz#3$iw5xa(ftup'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cringe-app.herokuapp.com']
 
 
 # Application definition
