@@ -13,6 +13,7 @@ class CustomUser(AbstractUser):
 		return self.email
 
 class Message(models.Model):
+	drinks = models.IntegerField(default=0)
 	body = models.CharField(max_length=250)
 	user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
 
@@ -21,6 +22,7 @@ class Message(models.Model):
 
 class Contact(models.Model):
 	name = models.CharField(max_length=100)
+	phone = PhoneField(blank=True)
 	user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
 
 	def __str__(self):
