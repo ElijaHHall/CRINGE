@@ -36,6 +36,7 @@
 			{% for message in user_messages %}
 
 			<p>At {{ message.drinks }} drinks: {{ message.body }}</p>
+
 			{% endfor %}
 		</div>
 		<div class="modal-footer">
@@ -51,6 +52,11 @@
 			<h4>{{user.first_name}}'s Contacts</h4>
 			{% for contact in user_contacts %}
 			<p>{{ contact.name }}: {{ contact.phone }}</p>
+				<form action="post_contact/" method="post">
+		      		{% csrf_token %}
+		      		{{ form.as_p }}
+		      		<input type="submit" value="Submit" />
+  				</form>
 			{% endfor %}
 		</div>
 
@@ -58,11 +64,7 @@
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="fas fa-times-circle"></i></a>
 		</div>
 	</div>
-					<form action="post_url/" method="post">
-		      		{% csrf_token %}
-		      		{{ form.as_p }}
-		      		<input type="submit" value="Submit" />
-  				</form>
+					
 	  
 {% else %}
 	<p>You are not logged in</p>
