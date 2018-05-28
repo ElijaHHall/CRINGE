@@ -7,55 +7,50 @@
 
 {% if user.is_authenticated %}
 
-<nav>
-	<div class="nav-wrapper black">
-	  <a href="/" class="brand-logo center">CRNG</a>
-	  <ul id="nav-mobile" class="left">
-		<a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="fas fa-pen-square"></i></a>
-	  </ul>
+	<nav>
+		<div class="nav-wrapper black">
+		  <a href="/" class="brand-logo center">CRNG</a>
 
-	  <ul id="nav-mobile" class="right">
-	  	<a class="waves-effect waves-light modal-trigger" href="#modal2"><i class="fas fa-users"></i></a>
-	  </ul>
+		  <ul id="nav-mobile" class="left">
+			<a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="fas fa-pen-square"></i></a>
+		  </ul>
 
-	</div>
+		  <ul id="nav-mobile" class="right">
+		  	<a class="waves-effect waves-light modal-trigger" href="#modal2"><i class="fas fa-users"></i></a>
+		  </ul>
+		</div>
+	</nav>
 
-</nav>
 	<h1>Hi {{ user.username }}!</h1>
+
 	<h3>Wow, your phone number is {{ user.phone }}! Great job!</h3>
+
 	<a href="{% url 'logout' %}">
-		<button class="btn waves-effect waves-light" type="submit" name="action">Log dafuq out
-    		<i class="fas fa-sign-in-alt"></i>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Log dafuq out<i class="fas fa-sign-in-alt"></i>
   		</button>
   	</a>
+
   	<div id="modal1" class="modal">
 		<div class="modal-content">
 			<h4>Modal Header</h4>
-			{% for message in messages %}
-			<p>{{ message.body }}</p>
-			{% endfor %}
 		</div>
 		<div class="modal-footer">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
 		</div>
 	</div>
 
-
-
-
 	<div id="modal2" class="modal">
 		<div class="modal-content">
 			<h4>Modal Header</h4>
-			<p>A bunch of text</p>
 		</div>
 		<div class="modal-footer">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
 		</div>
 	</div>
 	  
-{% else %}
-	<p>You are not logged in</p>
-	<a href="{% url 'login' %}">login</a> |
-	<a href="{% url 'signup' %}">signup</a>
-{% endif %}
+	{% else %}
+		<p>You are not logged in</p>
+		<a href="{% url 'login' %}">login</a> |
+		<a href="{% url 'signup' %}">signup</a>
+	{% endif %}
 {% endblock %}
