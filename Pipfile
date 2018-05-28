@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[packages]
+dj-database-url = "*"
+django = "*"
+gunicorn = "*"
+django-heroku = "*"
+psycopg2 = "*"
+whitenoise = "*"
+requests = "*"
+django-phone-field = "*"
+django-dob-widget = "*"
+
+[requires]
+python_version = "3.6"
