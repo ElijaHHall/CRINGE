@@ -31,8 +31,10 @@
   	<div id="modal1" class="modal">
 		<div class="modal-content">
 			<h4>{{user.first_name}}'s Messages</h4>
-			{% for message in messages %}
-			<p>{{ message.body }}</p>
+			
+			{% for message in user_messages %}
+
+			<p>{{ message }}</p>
 			{% endfor %}
 		</div>
 		<div class="modal-footer">
@@ -46,8 +48,8 @@
 	<div id="modal2" class="modal">
 		<div class="modal-content">
 			<h4>{{user.first_name}}'s Contacts</h4>
-			{% for contact in contacts %}
-			<p>{{ contact.name }}</p>
+			{% for contact in user_contacts %}
+			<p>{{ contact }}</p>
 			{% endfor %}
 		</div>
 		<div class="modal-footer">
