@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9c17b671d4e29c858ae21e366dbcfa218937e7ca003bdc43b92b0a0a5f74fa13"
+            "sha256": "6ab9e31568e8c3ad46bc65e49d1a7ace0fe4dc97e1ff8541301fa918e2c27643"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -42,6 +42,12 @@
                 "sha256:71d1a584bb4ad2b4f933d07d02c716755c1394feaac1ce61ce37843ac5401092"
             ],
             "version": "==2.0.5"
+        },
+        "django-dob-widget": {
+            "hashes": [
+                "sha256:7f2d394e68b77e366f2ee0ec838d4cce31356f476e11c55bfb2242fd3474cce3"
+            ],
+            "version": "==1.1.3"
         },
         "django-heroku": {
             "hashes": [
@@ -116,6 +122,13 @@
                 "sha256:9c443e7324ba5b85070c4a818ade28bfabedf16ea10206da1132edaa6dda237e"
             ],
             "version": "==2.18.4"
+        },
+        "six": {
+            "hashes": [
+                "sha256:70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",
+                "sha256:832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"
+            ],
+            "version": "==1.11.0"
         },
         "urllib3": {
             "hashes": [
