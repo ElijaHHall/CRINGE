@@ -1,3 +1,35 @@
-h1 {
-	color: red;
+body {
+    background-color: #FFD521
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+.signUpForm {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input {
+    background-color: #E5C01E !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+    border-bottom: none !important;
+    font-size: 25px !important;
+}
+
+body label {
+    font-size: 20px;
+    background-color: rgba(0,0,0,.75);
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ span .helptext {
+    display: none;
 }

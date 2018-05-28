@@ -4,8 +4,14 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="/" class="brand-logo center">CRINGE</a>
+
+	</div>
+</nav>
   <h2>Sign up</h2>
-  <form method="post">
+  <form method="post" class="signUpForm">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Sign up</button>
