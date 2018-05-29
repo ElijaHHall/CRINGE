@@ -1,9 +1,5 @@
 html {
     background:  linear-gradient(yellow, #FFD521);
-<<<<<<< HEAD
-    background-size: cover;
-=======
->>>>>>> 2fc0605147b7a130e1c01289df565eea0372562b
     background-repeat: no-repeat;
 }
 
@@ -194,10 +190,9 @@ form p:nth-child(7) label {
         width: 35%;
         margin: 1%;
     }
-<<<<<<< HEAD
     main .toast {
         width: 75%;
-=======
+}
     main .drunk {
         width: 50%;
         margin-left: 25%;
@@ -209,7 +204,6 @@ form p:nth-child(7) label {
 
     nav #signUpNav {
         margin-left: 75%;
->>>>>>> 2fc0605147b7a130e1c01289df565eea0372562b
     }
 }
 
