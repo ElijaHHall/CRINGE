@@ -12,6 +12,7 @@ whitenoise = "*"
 requests = "*"
 django-phone-field = "*"
 django-dob-widget = "*"
+twilio = "*"
 
 [requires]
 python_version = "3.6"
