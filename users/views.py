@@ -20,3 +20,16 @@ def home(request):
 def logout_view(request):
 	logout(request)
 	return HttpResponseRedirect('/users/login')
+
+def drink(request):
+    message_id = request.GET.get('message_id', None)
+
+    drink = 0
+    if (message_id):
+        message = Message.objects.get(id=int(message_id))
+        if message is not None:
+            drink = message.drink + 1
+            message.drink = drink
+            message.save()
+    return HttpResponse(drink)
+
