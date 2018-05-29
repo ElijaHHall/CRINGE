@@ -4,10 +4,17 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="/" class="brand-logo center">CRINGE</a>
+
+	</div>
+</nav>
   <h2>Sign up</h2>
-  <form method="post">
+  <img src="../../static/images/drunk.png" class="drunk">
+  <form method="post" class="signUpForm">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign up</button>
+    <button id="submitFormBtn" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
   </form>
 {% endblock %}
