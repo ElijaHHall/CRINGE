@@ -10,14 +10,13 @@ main .empty {
     height: 10em;
 }
 main .drunk {
-    width: 20%;
-    margin-left: 40%;
+    width: 25%;
 }
 
 main .toast {
 /*    text-align: center;
-*/    width: 40%;
-    margin: 5px auto;
+*/  width: 40%;
+    margin: 20% auto;
     background: transparent;
     box-shadow: 0;
     border: 10px solid black;
@@ -175,6 +174,9 @@ form p:nth-child(7) label {
     nav #signUpNav {
         margin-left: 80%;
     }
+    main .toast {
+        width: 250px;
+    }
 }
 
 /*  RESPONSIVE PHONE */
@@ -206,19 +208,19 @@ form p:nth-child(7) label {
     }
     main .toast {
         width: 75%;
-        margin: 14% auto;
-        display: inline;
+        margin: 15% auto;
     }
 
     main .splash-btn {
         display: inline;
         padding: 25px ;
         width: 75%;
+        margin: 30% auto;
     }
 
     main .drunk {
         width: 50%;
-        margin-left: 25%;
+        margin: 10% auto;
     }
 
     nav #loginNav {
