@@ -19,15 +19,17 @@
 		  </ul>
 		</div>
 	</nav>
-	<img src="../../static/images/beericon.png" class="iconPics">
-	<img src="../../static/images/martini.png" class="iconPics">
-	<img src="../../static/images/shotglass.png" class="iconPics">
-	<h1>Hi {{ user.username }}!</h1>
 
-	<h3>Wow, your phone number is {{ user.phone }}! Great job!</h3>
+	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
+	<div class="iconContainer">
+	<img src="../../static/images/beericon.png" class="iconPics" id="beerIcon">
+	<img src="../../static/images/martini.png" class="iconPics" id="martiniIcon">
+	<img src="../../static/images/shotglass.png" class="iconPics" id="shotglassIcon">
+	</div>
+	<h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3>
 
 	<a href="{% url 'logout' %}">
-		<button class="btn waves-effect waves-light" type="submit" name="action">Log dafuq out<i class="fas fa-sign-in-alt"></i>
+		<button class="btn waves-effect waves-light logOutBtn" type="submit" name="action">Logout<i class="fas fa-sign-in-alt"></i>
   		</button>
   	</a>
 
@@ -48,7 +50,8 @@
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
 		</div>
 	</div>
-
+<div class="empty">
+</div>
 	{% else %}
 		<p>You are not logged in</p>
 		<a href="{% url 'login' %}">login</a> |
