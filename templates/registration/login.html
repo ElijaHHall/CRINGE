@@ -4,10 +4,17 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="/" class="brand-logo center">CRINGE</a>
+
+	</div>
+</nav>
 <h2>Login</h2>
-<form method="post">
+<img src="../../static/images/hazardsign.png" class="drunk">
+<form method="post" class="loginForm">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">Login</button>
+  <button id="loginFormBtn" class="btn waves-effect waves-light" type="submit" name="action">Login</button>
 </form>
 {% endblock %}
