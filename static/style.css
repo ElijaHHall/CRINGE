@@ -1,35 +1,53 @@
 html {
     background:  linear-gradient(yellow, #FFD521);
+
     background-repeat: no-repeat;
 }
+
 
 main {
     text-align: center;
 }
 
+main .empty {
+    height: 10em;
+}
+
 main .drunk {
-    width: 20%;
+    width: 25%;
 }
 
 main .toast {
-    text-align: center;
-    width: 50%;
-    margin: 7% auto;
-    margin-bottom: 20%;
+/*    text-align: center;
+*/  width: 40%;
+    margin: 20% auto;
     background: transparent;
     box-shadow: 0;
     border: 10px solid black;
     border-radius: 10px;
 }
-.splash-btn {
-    text-align: center;
-    margin: 20% auto;
+
+main .splash-btn {
+     width: 100%;
+     margin: 15% auto;
+     padding-top: 15px;
+
 }
 
-h2, h1 {
+main .cringer-title {
+    font-size: 45px;
+    margin: 5% auto;
+
+}
+main .cringer-slog {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+h2,h1 {
     color: black;
-    text-align: center;
-    font-family: 'Plaster', cursive;
+/*    text-align: center;
+*/    font-family: 'Plaster', cursive;
 }
 
 h3 {
@@ -167,8 +185,12 @@ form p:nth-child(7) label {
     nav #signUpNav {
         margin-left: 80%;
     }
+
     .iconPics {
         width: 15%;
+    }
+    main .toast {
+        width: 250px;
     }
 }
 
@@ -201,9 +223,19 @@ form p:nth-child(7) label {
     }
     main .toast {
         width: 75%;
-}
+        margin: 15% auto;
+    }
+
+    main .splash-btn {
+        display: inline;
+        padding: 25px ;
+        width: 75%;
+        margin: 30% auto;
+    }
+
     main .drunk {
         width: 50%;
+        margin: 10% auto;
     }
 
     nav #loginNav {
@@ -213,9 +245,12 @@ form p:nth-child(7) label {
     nav #signUpNav {
         margin-left: 75%;
     }
-
+    main .cringer-title {
+        display: inline;
+        width: 50%;
+    }
     .iconPics {
-        width: 20%; */
+        width: 20%;
     }
     h3 {
         font-size: 25px;
