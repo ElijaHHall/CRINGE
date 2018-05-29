@@ -110,6 +110,10 @@ form p:nth-child(7) label {
     margin: 1%;
 }
 
+.iconPics {
+    width: 10%;
+}
+
 /*  RESPONSIVE TABLET */
 @media screen and (max-width: 850px) {
     form p:nth-child(7) label {
