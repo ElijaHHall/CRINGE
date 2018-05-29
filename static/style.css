@@ -14,8 +14,20 @@ h2 {
     font-family: 'Plaster', cursive;
 }
 
-.brand-logo {
+nav .signUpNav {
     font-family: 'Shadows Into Light', cursive;
+}
+
+nav #loginNav {
+    margin-left: 85%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+nav #signUpNav {
+    margin-left: 85%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
 }
 
 .signUpForm {
@@ -120,6 +132,12 @@ form p:nth-child(7) label {
         width: 35%;
         margin: 1%;
     }
+    nav #loginNav {
+        margin-left: 80%;
+    }
+    nav #signUpNav {
+        margin-left: 80%;
+    }
 }
 
 /*  RESPONSIVE PHONE */
@@ -152,5 +170,13 @@ form p:nth-child(7) label {
     main .drunk {
         width: 50%;
         margin-left: 25%;
+    }
+
+    nav #loginNav {
+        margin-left: 75%;
+    }
+
+    nav #signUpNav {
+        margin-left: 75%;
     }
 }
