@@ -6,6 +6,8 @@ from .models import Message, Contact
 from django.contrib.auth.models import AbstractUser
 from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login, logout
+from .credentials import *
+from .send_sms import *
 
 class SignUp(generic.CreateView):
 	form_class = CustomUserCreationForm
@@ -21,15 +23,14 @@ def logout_view(request):
 	logout(request)
 	return HttpResponseRedirect('/users/login')
 
-def drink(request):
-    message_id = request.GET.get('message_id', None)
+# this function will fire message on homepage button click
+# you can change the message info in send_sms.py
+# so use wisely
+def send_message(request):
+	user_id = request.GET.get('user_id', None)
+	message = client.messages.create(to=my_cell, from_=my_twilio, body=my_msg)
 
-    drink = 0
-    if (message_id):
-        message = Message.objects.get(id=int(message_id))
-        if message is not None:
-            drink = message.drink + 1
-            message.drink = drink
-            message.save()
-    return HttpResponse(drink)
+	return HttpResponse(message)
+
+
 

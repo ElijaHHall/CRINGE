@@ -6,12 +6,11 @@ $(document).ready(function(){
 		console.log('clicked')
 		var element = $(this);
 			$.ajax({
-				url: '/users/drink/',
+				url: '/users/send_message/',
 				method: 'GET',
-				data: {message_id: element.attr('data-id')},
+				data: {user_id: element.attr('data-id')},
 				success: function(response){
 				console.log(response);
-				console.log()
 				}
 			})
 		})
