@@ -1,5 +1,7 @@
 body {
     background:  linear-gradient(yellow, #FFD521);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 main .drunk {
@@ -7,7 +9,26 @@ main .drunk {
     margin-left: 40%;
 }
 
-h2 {
+main .toast {
+    text-align: center;
+    width: 50%;
+    margin: 7% auto;
+    margin-bottom: 20%;
+    background: transparent;
+    box-shadow: 0;
+    border: 10px solid black;
+    border-radius: 10px;
+}
+
+
+.splash-btn {
+    text-align: center;
+    margin: 20% auto;
+
+}
+
+
+h2,h1 {
     color: black;
     text-align: center;
     font-family: 'Plaster', cursive;
@@ -131,4 +152,8 @@ form p:nth-child(7) label {
         width: 35%;
         margin: 1%;
     }
+    main .toast {
+        width: 75%;
+    }
 }
+

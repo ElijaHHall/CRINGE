@@ -2,15 +2,21 @@
 {% extends 'base.html' %}
 
 {% block title %}Welcome?{% endblock %}
-
 {% block content %}
 
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="/" class="brand-logo center">CRINGE</a>
+
+	</div>
+</nav>
 <h1>Welcome Cringers!</h1>
+ 	<img src="../../static/images/buds.png" class="toast">
 
-<a class="btn waves-effect waves-light" href="{% url 'signup' %}">Sign-up</a>
-
-<a class="btn waves-effect waves-light" href="{% url 'login' %}">login</a>
-
+<div class="splash-btn">
+	<a class="btn waves-effect waves-light black signup-splash " href="{% url 'signup' %}">Sign-up</a>
 
 
+	<a class="btn waves-effect waves-light black login-splash" href="{% url 'login' %}">login</a>
+</div>
 {% endblock %}
