@@ -26,7 +26,6 @@ main .toast {
 
 }
 
-
 h2,h1 {
     color: black;
     text-align: center;
@@ -206,4 +205,3 @@ form p:nth-child(7) label {
         margin-left: 75%;
     }
 }
-
