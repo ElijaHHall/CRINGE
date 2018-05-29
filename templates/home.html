@@ -28,6 +28,8 @@
 	</div>
 	<h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3>
 
+	<h4>By the way your user ID is {{ user.id }}</h4>
+
 	<a href="{% url 'logout' %}">
 		<button class="btn waves-effect waves-light logOutBtn" type="submit" name="action">Logout<i class="fas fa-sign-in-alt"></i>
   		</button>
@@ -35,8 +37,11 @@
 
   	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<h4>Modal Header</h4>
+			<h4>{{ user.username }}'s trashy messages</h4>
 		</div>
+		{% for message in user_messages %}
+			<p>{{ message.id }}: {{ message.body }}</p>
+		{% endfor %}
 		<div class="modal-footer">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
 		</div>
@@ -44,14 +49,22 @@
 
 	<div id="modal2" class="modal">
 		<div class="modal-content">
-			<h4>Modal Header</h4>
+			<h4>{{ user.username }}'s trashy contacts</h4>
 		</div>
+		{% for contact in user_contacts %}
+			<p>{{ contact.name }}: {{ contact.phone }}</p>
+		{% endfor %}
 		<div class="modal-footer">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
 		</div>
 	</div>
+
 <div class="empty">
 </div>
+	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.id}}">
+  		Do it, bitch
+	</a>
+
 	{% else %}
 		<p>You are not logged in</p>
 		<a href="{% url 'login' %}">login</a> |
