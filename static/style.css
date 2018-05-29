@@ -157,6 +157,10 @@ form p:nth-child(7) label {
 .empty {
     height: 20em;
 }
+
+.fas .fa-ban {
+    color: white;
+}
 /*  RESPONSIVE TABLET */
 @media screen and (max-width: 850px) {
     form p:nth-child(7) label {
