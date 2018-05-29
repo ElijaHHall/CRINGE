@@ -1,16 +1,30 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
-
 {% block title %}Welcome?{% endblock %}
-
 {% block content %}
 
-<h1>Welcome Cringers!</h1>
+<nav>
+	<div class="nav-wrapper black">
+	  <a href="/" class="brand-logo center signUpNav">CRINGE</a>
 
-<a class="btn waves-effect waves-light" href="{% url 'signup' %}">Sign-up</a>
+	</div>
+</nav>
+<h1 
+	class="cringer-title">Welcome to Cringe!
+</h1>
 
-<a class="btn waves-effect waves-light" href="{% url 'login' %}">login</a>
+<h4 class="cringer-slog">
+	Where you can let people know where the party is...
+</h4>
+ 	<img src="../../static/images/buds.png" class="toast">
+
+<div class="splash-btn">
+	<a class="btn waves-effect waves-light black signup-splash " href="{% url 'signup' %}">Sign-up</a>
 
 
+	<a class="btn waves-effect waves-light black login-splash" href="{% url 'login' %}">login</a>
+</div>
+<div class="empty">
+</div>
 
 {% endblock %}
