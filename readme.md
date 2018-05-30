@@ -8,7 +8,7 @@ When you sign up, enter in your friends phone numbers, add the text you want to 
 
 //Programs used\\
 
-- API: Twilio (for sending text messages)
+- API: Twilio (for sending text messages
 - Backend: Python, Django
 - Frontend: Materialize, Bootstrap
 
@@ -16,6 +16,15 @@ When you sign up, enter in your friends phone numbers, add the text you want to 
 
 - Make app responsive and mobile.
 - Get users able to sign up, sign in, and logout
+- Get Twilio to send texts to users
+- Get text content to be randomized and to send the same message to contacts
+- ALWAYS DEPLOY
+
+
+//Stretch Goals\\
+
+- We wanted to implement Google Maps API to send location with text
+- Wanted to make a drink gauge the fills up with the amount of texts sent
 - 
 
 //Languages Used\\
