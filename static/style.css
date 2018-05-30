@@ -1,20 +1,44 @@
+/* GLOBAL VARIABLES */
 html {
     background:  linear-gradient(yellow, #FFD521);
     background-repeat: no-repeat;
 }
-
 main {
     text-align: center;
 }
+h2,h1 {
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+h3 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
 
+/* NAVIGATION BAR */
+nav .globalNav {
+    font-family: 'Shadows Into Light', cursive;
+}
+nav #loginNav {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+nav #signUpNav {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+/*  logout button on Nav bar*/
+.fas .fa-arrow-circle-left {
+    color: white;
+}
+
+/*  empty div at bottom of each page*/
 main .empty {
-    height: 10em;
+    height: 15em;
 }
 
-main .drunk {
-    width: 20%;
-}
-
+/*  SPLASH page*/
 main .buds {
     width: 30%;
     margin: 2% auto;
@@ -22,65 +46,35 @@ main .buds {
     border: 10px solid black;
     border-radius: 10px;
 }
-
 main .splash-btn {
      width: 100%;
 }
-
 main .cringer-title {
     font-size: 45px;
-    margin: 2% auto;
+    margin: 3% auto;
 }
 main .cringer-slog {
     font-family: 'Shadows Into Light', cursive;
-}
-
-
-h2,h1 {
-    color: black;
-    font-family: 'Gloria Hallelujah', cursive;
-}
-
-p {
-    color: black;
-    font-family: 'Gloria Hallelujah', cursive;
-    width: 100%;
-    font-size: 35px;
-}
-
-h3 {
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-}
-
-nav .signUpNav {
-    font-family: 'Shadows Into Light', cursive;
-}
-
-nav #loginNav {
-    margin-left: 85%;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-}
-
-nav #signUpNav {
-    margin-left: 85%;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-}
-
-.signUpForm {
-    text-align: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
+ /*  LOGIN FORM */
 .loginForm {
     text-align: center;
     width: 50%;
     margin: 0 auto;
 }
 
+/*  SIGN UP PAGE*/
+.signUpForm {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+main .drunk {
+    width: 20%;
+}
 input {
     background-color: rgba(229,207,30,.50) !important;
     border-radius: 5px !important;
@@ -88,16 +82,14 @@ input {
     border-bottom: none !important;
     font-size: 25px !important;
 }
-
+/*  This placeholder is for the DOB tabs*/
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */
     text-align: center;
 }
-
 body label {
     font-size: 35px;
-    /* background-color: rgba(0,0,0,.6); */
     display: inline-block;
     color: black;
     padding: 7px;
@@ -108,17 +100,17 @@ body label {
 .helptext {
     display: none;
 }
-
+/* removes text */
 form p:nth-child(6) {
     display: none;
 }
-
 form p:nth-child(7) label {
     display: block;
     width: 50%;
     margin: 0 auto;
 }
 
+/*  removes the extn field in phones*/
 #id_phone_1 {
     display: none;
 }
@@ -127,10 +119,7 @@ form p:nth-child(7) label {
     margin-bottom: 20px;
 }
 
-#loginFormBtn {
-    margin-bottom: 20px;
-}
-
+/* ENTRY DOB fields */
 #id_birth_date_0 {
     display: inline;
     width: 16%;
@@ -149,18 +138,26 @@ form p:nth-child(7) label {
     margin: 1%;
 }
 
-.iconPics {
-    width: 10%;
+/*  HOMEPAGE when users log in*/
+.appendMessages li {
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 100%;
+    font-size: 35px;
 }
-.empty {
-    height: 20em;
+/*  here is the send button for text messages*/
+#drink-btn {
+    margin: 10% auto;
 }
 
-.fas .fa-ban {
-    color: white;
+/*  beer, martini, and shot glass pics*/
+.drinkPics {
+    width: 10%;
 }
+
 /*  RESPONSIVE TABLET */
 @media screen and (max-width: 850px) {
+    /*  birthdate labels */
     form p:nth-child(7) label {
         display: block;
         width: 75%;
@@ -181,16 +178,13 @@ form p:nth-child(7) label {
         width: 35%;
         margin: 1%;
     }
-    nav #loginNav {
-        margin-left: 80%;
-    }
-    nav #signUpNav {
-        margin-left: 80%;
-    }
 
-    .iconPics {
+    /* beer, martini, and shot glass */
+    .drinkPics {
         width: 15%;
     }
+
+    /*  Splash page pic*/
     main .buds {
         width: 50%;
     }
@@ -198,15 +192,16 @@ form p:nth-child(7) label {
 
 /*  RESPONSIVE PHONE */
 @media screen and (max-width: 425px) {
+
+    h3 {
+        font-size: 25px;
+    }
+
+    /*  birthdate labels */
     form p:nth-child(7) label {
         display: block;
         width: 100%;
         margin: 0 auto;
-    }
-    form p:nth-child(3) label {
-        display: block;
-        width: 100%;
-        font-size: 30px;
     }
     #id_birth_date_0 {
         display: inline;
@@ -223,39 +218,41 @@ form p:nth-child(7) label {
         width: 35%;
         margin: 1%;
     }
+
+    /* Email address label */
+    form p:nth-child(3) label {
+        display: block;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    /*SPLASH page  */
+    main .cringer-title {
+        display: inline-block;
+        width: 100%;
+        margin-top: 5%;
+    }
     main .buds {
         width: 75%;
         margin: 5% auto;
     }
-
     main .splash-btn {
         display: inline;
         padding: 25px ;
         width: 75%;
     }
 
+    /* SIGN UP pic */
     main .drunk {
-        width: 50%;
+        width: 40%;
     }
 
-    nav #loginNav {
-        margin-left: 75%;
-    }
-
-    nav #signUpNav {
-        margin-left: 75%;
-    }
-    main .cringer-title {
-        display: inline;
-        width: 50%;
-    }
-    .iconPics {
+    /*User Home page  */
+    .drinkPics {
         width: 20%;
     }
-    h3 {
-        font-size: 25px;
-    }
 
+    /* Placeholder for mm/dd/yyyy */
     ::placeholder {
         font-size: 20px;
     }

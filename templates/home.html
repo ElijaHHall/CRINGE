@@ -9,9 +9,9 @@
 
 	<nav>
 		<div class="nav-wrapper black">
-		  <a href="/" class="brand-logo center signUpNav">CRINGE</a>
+		  <a href="/" class="brand-logo center globalNav">CRINGE</a>
 		  <ul id="nav-mobile" class="left">
-			<a href="{% url 'logout' %}"><i class="fas fa-ban"></i></a>
+			<a href="{% url 'logout' %}"><i class="fas fa-arrow-circle-left"></i></a>
 		  </ul>
 
 		  <ul id="nav-mobile" class="right">
@@ -21,13 +21,15 @@
 	</nav>
 
 	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
-		<p>***APPEND MESSAGES GOES HERE*** in this "p" tag</p>
+		<ul class="appendMessages">
+			<li>***APPEND MESSAGES GOES HERE*** in this "li" tag</li>
+		</ul>
 	<div class="iconContainer">
-		<img src="../../static/images/beericon.png" class="iconPics" id="beerIcon">
-		<img src="../../static/images/martini.png" class="iconPics" id="martiniIcon">
-		<img src="../../static/images/shotglass.png" class="iconPics" id="shotglassIcon">
+		<img src="../../static/images/beericon.png" class="drinkPics" id="beerIcon">
+		<img src="../../static/images/martini.png" class="drinkPics" id="martiniIcon">
+		<img src="../../static/images/shotglass.png" class="drinkPics" id="shotglassIcon">
 	</div>
-	<h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3>
+	<!-- <h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3> -->
 
 	<!-- <h4>By the way your user ID is {{ user.id }}</h4> -->
 
@@ -45,7 +47,7 @@
 	</div>
 
 	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.id}}">
-  		Do it, bitch
+  		SEND IT!
 	</a>
 	<div class="empty">
 	</div>
