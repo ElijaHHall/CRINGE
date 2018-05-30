@@ -139,6 +139,13 @@ form p:nth-child(7) label {
 }
 
 /*  HOMEPAGE when users log in*/
+/*  beer, martini, and shot glass pics*/
+.drinkPics {
+    width: 10%;
+}
+#iconContainer {
+    padding-top: 5%;
+}
 #appendMessages {
     color: black;
     font-family: 'Gloria Hallelujah', cursive;
@@ -148,11 +155,6 @@ form p:nth-child(7) label {
 /*  here is the send button for text messages*/
 #drink-btn {
     margin: 10% auto;
-}
-
-/*  beer, martini, and shot glass pics*/
-.drinkPics {
-    width: 10%;
 }
 
 /*  **********RESPONSIVE TABLET********** */
