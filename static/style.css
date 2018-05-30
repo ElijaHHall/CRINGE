@@ -35,7 +35,7 @@ nav #signUpNav {
 
 /*  empty div at bottom of each page*/
 main .empty {
-    height: 15em;
+    height: 25em;
 }
 
 /*  SPLASH page*/
@@ -139,7 +139,7 @@ form p:nth-child(7) label {
 }
 
 /*  HOMEPAGE when users log in*/
-.appendMessages li {
+#appendMessages {
     color: black;
     font-family: 'Gloria Hallelujah', cursive;
     width: 100%;
@@ -155,7 +155,7 @@ form p:nth-child(7) label {
     width: 10%;
 }
 
-/*  RESPONSIVE TABLET */
+/*  **********RESPONSIVE TABLET********** */
 @media screen and (max-width: 850px) {
     /*  birthdate labels */
     form p:nth-child(7) label {
@@ -190,7 +190,7 @@ form p:nth-child(7) label {
     }
 }
 
-/*  RESPONSIVE PHONE */
+/* ********** RESPONSIVE PHONE********** */
 @media screen and (max-width: 425px) {
 
     h3 {
