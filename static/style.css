@@ -56,7 +56,7 @@ main .cringer-title {
 main .cringer-slog {
     font-family: 'Shadows Into Light', cursive;
     width: 80%;
-    margin: 0 auto;
+    margin: 3% auto;
 }
 
  /*  LOGIN FORM */
@@ -157,6 +157,15 @@ form p:nth-child(7) label {
     margin: 10% auto;
 }
 
+#modal2 h4 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+}
+#modal2 p {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 35px;
+}
+
 /*  **********RESPONSIVE TABLET********** */
 @media screen and (max-width: 850px) {
     /*  birthdate labels */
@@ -189,6 +198,9 @@ form p:nth-child(7) label {
     /*  Splash page pic*/
     main .buds {
         width: 50%;
+    }
+    main .cringer-slog {
+        width: 85%;
     }
 }
 
@@ -242,6 +254,11 @@ form p:nth-child(7) label {
         display: inline;
         padding: 25px ;
         width: 75%;
+    }
+    main .cringer-slog {
+        display: inline-block;
+        width: 90%;
+        margin: 5% auto;
     }
 
     /* SIGN UP pic */
