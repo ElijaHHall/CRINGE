@@ -8,6 +8,8 @@ from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login, logout
 from .credentials import *
 from .send_sms import *
+from random import randint
+
 
 class SignUp(generic.CreateView):
 	form_class = CustomUserCreationForm
@@ -28,9 +30,14 @@ def logout_view(request):
 # so use wisely
 def send_message(request):
 	user_id = request.GET.get('user_id', None)
-	message = client.messages.create(to=my_cell, from_=my_twilio, body=my_msg)
-
+	contact_length = len(my_cell)
+	message_length = len(my_msg)
+	for i in range(contact_length):
+		message = client.messages.create(to=my_cell[i], from_=my_twilio, body="You've received a drunk text from" + my_msg[randint(0, message_length-1)])
+		print(message_length)
 	return HttpResponse(message)
 
+
+# make an array of messages, and have ajax call a random message on each click
 
 

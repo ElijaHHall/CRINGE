@@ -11,7 +11,7 @@ $(document).ready(function(){
 				method: 'GET',
 				data: {user_id: element.attr('data-id')},
 				success: function(response){
-				console.log(response);
+				console.log(response.body);
 				}
 			})
 		})
