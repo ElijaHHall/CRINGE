@@ -36,10 +36,13 @@
 
 	<div id="modal2" class="modal">
 		<div class="modal-content">
-			<h4>{{ user.username }}'s trashy contacts</h4>
+			<h4>{{ user.username }}'s contacts</h4>
+			<p>JP Reynolds</p>
+			<p>William Jefferies</p>
+			<p>Elijah Hall</p>
+			<p>Steve Ngo</p>
 		</div>
 		{% for contact in user_contacts %}
-			<p>{{ contact.name }}: {{ contact.phone }}</p>
 		{% endfor %}
 		<div class="modal-footer">
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
