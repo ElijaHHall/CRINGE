@@ -6,7 +6,7 @@ auth_token = "ed2ea0f981ecfae2b7d0122c590cbee4"
 # if you want to send a group sms, uncomment the my_cell array with the group inside of it and comment out the single number below, and vice versa
 
 # my_cell = ["+19702273514", "+17087384175", "+17205971878", "+16787874272"]
-my_cell = ["+19702273514"]
+my_cell = ["+17087384175"]
 my_twilio = "+19513092057"
 
 # Find these values at https://twilio.com/user/account
