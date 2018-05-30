@@ -6,9 +6,10 @@
 {% block content %}
 <nav>
 	<div class="nav-wrapper black">
-	  <a href="/" class="brand-logo center signUpNav">CRINGE</a>
-      <a href="{% url 'signup' %}" id="signUpNav">Sign Up</a>
-
+	  <a href="/" class="brand-logo center globalNav">CRINGE</a>
+	<ul id="nav-mobile" class="right">
+	  <a href="{% url 'signup' %}" id="signUpNav">Sign Up</a>
+  </ul>
 	</div>
 </nav>
 <h2>Login</h2>
@@ -18,4 +19,6 @@
   {{ form.as_p }}
   <button id="loginFormBtn" class="btn waves-effect waves-light" type="submit" name="action">Login</button>
 </form>
+<div class="empty">
+</div>
 {% endblock %}
