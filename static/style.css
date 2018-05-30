@@ -40,12 +40,13 @@ main .empty {
 
 /*  SPLASH page*/
 main .buds {
-    width: 30%;
+    width: 40%;
     margin: 2% auto;
     background: transparent;
     border: 10px solid black;
     border-radius: 10px;
 }
+
 main .splash-btn {
      width: 100%;
 }
