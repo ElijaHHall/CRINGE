@@ -19,18 +19,16 @@
 		  </ul>
 		</div>
 	</nav>
-
+	<div id="iconContainer">
+		<img src="../../static/images/beericon.png" class="drinkPics" id="beerIcon">
+		<img src="../../static/images/cocktail2.png" class="drinkPics" id="martiniIcon">
+		<img src="../../static/images/whiskey.png" class="drinkPics" id="shotglassIcon">
+	</div>
 	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
 
 		<ul id="appendMessages">
-			
-		</ul>
 
-	<div class="iconContainer">
-		<img src="../../static/images/beericon.png" class="drinkPics" id="beerIcon">
-		<img src="../../static/images/martini.png" class="drinkPics" id="martiniIcon">
-		<img src="../../static/images/shotglass.png" class="drinkPics" id="shotglassIcon">
-	</div>
+		</ul>
 	<!-- <h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3> -->
 
 	<!-- <h4>By the way your user ID is {{ user.id }}</h4> -->
@@ -44,14 +42,14 @@
 			<p>{{ contact.name }}: {{ contact.phone }}</p>
 		{% endfor %}
 		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
 		</div>
 	</div>
 
-	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.username}}">
+	<a id="drink-btn" class="waves-effect waves-light btn black" data-id="{{user.username}}">
 		SEND IT!
 	</a>
-	
+
 	<div class="empty">
 	</div>
 
