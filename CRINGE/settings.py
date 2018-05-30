@@ -10,7 +10,7 @@ DEBUG = True
 
 #IF YOU WANT TO PUSH TO HEROKU UNCOMMENT OUT THIS ALLOWED HOST
 ALLOWED_HOSTS = [
-    # 'cringe-app.herokuapp.com'
+    'cringe-app.herokuapp.com'
 ]
 
 INSTALLED_APPS = [
