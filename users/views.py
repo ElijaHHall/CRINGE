@@ -29,13 +29,14 @@ def logout_view(request):
 # you can change the message info in send_sms.py
 # so use wisely
 def send_message(request):
-	user_id = request.GET.get('user_id', None)
+	username = request.GET.get('username', None)
 	contact_length = len(my_cell)
 	message_length = len(my_msg)
+	random_message = my_msg[randint(0, message_length-1)]
 	for i in range(contact_length):
-		message = client.messages.create(to=my_cell[i], from_=my_twilio, body="You've received a drunk text from" + my_msg[randint(0, message_length-1)])
+		message = client.messages.create(to=my_cell[i], from_=my_twilio, body="You've received a drunk text from " + username + ' - \"' + random_message + '\"')
 		print(message_length)
-	return HttpResponse(message)
+	return HttpResponse(random_message)
 
 
 # make an array of messages, and have ajax call a random message on each click

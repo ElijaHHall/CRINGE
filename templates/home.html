@@ -21,7 +21,11 @@
 	</nav>
 
 	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
-		<p>***APPEND MESSAGES GOES HERE*** in this "p" tag</p>
+
+		<ul id="appendMessages">
+			
+		</ul>
+
 	<div class="iconContainer">
 		<img src="../../static/images/beericon.png" class="iconPics" id="beerIcon">
 		<img src="../../static/images/martini.png" class="iconPics" id="martiniIcon">
@@ -44,7 +48,7 @@
 		</div>
 	</div>
 
-	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.id}}">
+	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.username}}">
   		Do it, bitch
 	</a>
 	<div class="empty">
