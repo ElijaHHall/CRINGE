@@ -7,9 +7,8 @@
 <nav>
 	<div class="nav-wrapper black">
 	  <a href="/" class="brand-logo center globalNav">CRINGE</a>
-	<ul id="nav-mobile" class="right">
+    <ul id="nav-mobile" class="right">
 	  <a href="{% url 'login' %}" id="loginNav">Login</a>
-  </ul>
 	</div>
 </nav>
   <h2>Sign up</h2>
@@ -17,8 +16,6 @@
   <form method="post" class="signUpForm">
     {% csrf_token %}
     {{ form.as_p }}
-    <button id="submitFormBtn" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+    <button id="submitFormBtn" class="btn waves-effect waves-light black" type="submit" name="action">Submit</button>
   </form>
-  <div class="empty">
-  </div>
 {% endblock %}
