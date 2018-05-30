@@ -11,7 +11,7 @@
 		<div class="nav-wrapper black">
 		  <a href="/" class="brand-logo center signUpNav">CRINGE</a>
 		  <ul id="nav-mobile" class="left">
-			<a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="fas fa-pen-square"></i></a>
+			<a href="{% url 'logout' %}"><i class="fas fa-ban"></i></a>
 		  </ul>
 
 		  <ul id="nav-mobile" class="right">
@@ -21,31 +21,16 @@
 	</nav>
 
 	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
+		<p>***APPEND MESSAGES GOES HERE*** in this "p" tag</p>
 	<div class="iconContainer">
-	<img src="../../static/images/beericon.png" class="iconPics" id="beerIcon">
-	<img src="../../static/images/martini.png" class="iconPics" id="martiniIcon">
-	<img src="../../static/images/shotglass.png" class="iconPics" id="shotglassIcon">
+		<img src="../../static/images/beericon.png" class="iconPics" id="beerIcon">
+		<img src="../../static/images/martini.png" class="iconPics" id="martiniIcon">
+		<img src="../../static/images/shotglass.png" class="iconPics" id="shotglassIcon">
 	</div>
 	<h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3>
 
-	<h4>By the way your user ID is {{ user.id }}</h4>
+	<!-- <h4>By the way your user ID is {{ user.id }}</h4> -->
 
-	<a href="{% url 'logout' %}">
-		<button class="btn waves-effect waves-light logOutBtn" type="submit" name="action">Logout<i class="fas fa-sign-in-alt"></i>
-  		</button>
-  	</a>
-
-  	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4>{{ user.username }}'s trashy messages</h4>
-		</div>
-		{% for message in user_messages %}
-			<p>{{ message.id }}: {{ message.body }}</p>
-		{% endfor %}
-		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-		</div>
-	</div>
 
 	<div id="modal2" class="modal">
 		<div class="modal-content">
@@ -59,11 +44,11 @@
 		</div>
 	</div>
 
-<div class="empty">
-</div>
 	<a id="drink-btn" class="waves-effect waves-light btn" data-id="{{user.id}}">
   		Do it, bitch
 	</a>
+	<div class="empty">
+	</div>
 
 	{% else %}
 		<p>You are not logged in</p>
