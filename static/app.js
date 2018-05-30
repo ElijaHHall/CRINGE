@@ -9,9 +9,9 @@ $(document).ready(function(){
 			$.ajax({
 				url: '/users/send_message/',
 				method: 'GET',
-				data: {user_id: element.attr('data-id')},
+				data: {username: element.attr('data-id')},
 				success: function(response){
-				console.log(response);
+					$('#appendMessages').append("<li>" + response);
 				}
 			})
 		})
