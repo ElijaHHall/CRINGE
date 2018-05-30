@@ -23,7 +23,11 @@ The link will bring you to a splash page that will direct you to either the sign
 8. Twilio API
 9. Git
 
+#### **In the thick of it**
+
 ![](https://i.imgur.com/BDY3gWal.png)
+
+#### **Finishing strokes**
 
 ![](https://i.imgur.com/M0Uqs0ll.png)
 
