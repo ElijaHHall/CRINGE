@@ -25,13 +25,11 @@
 		<img src="../../static/images/whiskey.png" class="drinkPics" id="shotglassIcon">
 	</div>
 	<h3>Hi {{ user.username }}, are you ready to drink responsibly?</h3>
-
+	<a id="drink-btn" class="waves-effect waves-light btn black" data-id="{{user.username}}">
+		SEND IT!
+	</a>
 		<ul id="appendMessages">
 		</ul>
-	<!-- <h3>You'll be making all your mistakes from {{ user.phone }}, good luck!</h3> -->
-
-	<!-- <h4>By the way your user ID is {{ user.id }}</h4> -->
-
 
 	<div id="modal2" class="modal">
 		<div class="modal-content">
@@ -47,10 +45,6 @@
 			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
 		</div>
 	</div>
-
-	<a id="drink-btn" class="waves-effect waves-light btn black" data-id="{{user.username}}">
-		SEND IT!
-	</a>
 
 	<div class="empty">
 	</div>
