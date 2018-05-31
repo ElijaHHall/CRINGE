@@ -12,6 +12,7 @@ $(document).ready(function(){
 				data: {username: element.attr('data-id')},
 				success: function(response){
 					$('#appendMessages').append("<li>" + response);
+					
 				}
 			})
 		})
