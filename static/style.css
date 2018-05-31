@@ -151,6 +151,16 @@ form p:nth-child(7) label {
     font-family: 'Gloria Hallelujah', cursive;
     width: 90%;
     font-size: 35px;
+    text-align: center;
+}
+li {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+hr {
+    border-style: dashed;
 }
 /*  here is the send button for text messages*/
 #drink-btn {
@@ -203,9 +213,6 @@ form p:nth-child(7) label {
         width: 85%;
     }
 
-    #appendMessages {
-        font-size: 25px;
-    }
 }
 
 /* ********** RESPONSIVE PHONE********** */
